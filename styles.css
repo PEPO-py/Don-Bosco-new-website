@@ -26,6 +26,18 @@ hr {
 
 }
 
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    0%{
+        opacity: 1;
+        transform: translateY(-60px)
+    }
+}
+
 
 /*-----------------------
 HEADER
@@ -53,10 +65,23 @@ header{
     width: 100%;
     color: #000;
     box-shadow: 10px 2px 7px 5px #4643;
-
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#arrowDown{
+    font-size: 50px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    top: 10px;
+    animation: down 1s ease;
+    animation-fill-mode: forwards;
+    transition: all 1s ease;
+
 }
 
 header a{
@@ -96,7 +121,7 @@ header a.l5:hover{
     padding: 27px 40px;
     margin: 0px -20px;
     border-radius: 35px;
-    transition: 0.5s ease;
+    transition: all 0.1s ease;
 }
 
 header a.l6:hover{
@@ -261,6 +286,9 @@ DROPDOWN MENU
     animation-delay: 0.5s;
     animation: height 0.7s;
 }
+.dropdown:hover #drop2{
+    left:-10px;
+}
 
 .dropdown:hover .l2{
     color:white;
@@ -423,26 +451,40 @@ RECENT NEWS
 
 .botton1 {
     float: left;
-    background-color: #FF5B72;
     margin-top: 10%;
     text-align: center;
+    color: #FF5B72;
+    font-size: 50px;
     
 }
-.botton1 i{
+.botton1:hover{
+    text-align: center;
+    background-color: #FF5B72;
     color: #fff;
-    font-size: 30px;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
 }
+
+.botton1:active{margin-left:-20px;}
+
 
 .botton2 {
     float: right;
     margin-top: -11%;
-    background-color: #FF5B72;
     text-align: center;
-    
-}
-.botton2 i{
-    color: #fff;
-    font-size: 30px;
+    color: #FF5B72;
+    font-size: 50px;
 }
 
+.botton2:hover{
+    text-align: center;
+    background-color: #FF5B72;
+    color: #fff;
+    border-radius: 20px;
+     width: 50px;
+    height: 50px;
+}
+
+.botton2:active{margin-right:-20px;}
 
