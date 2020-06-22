@@ -15,15 +15,15 @@
 
 
     <body>
-        <header>
+        <header id='navbar'>
            <h2><a href="#top" target="_blank"><img class="img_top" src="image/Don_Bosco_logo.jpg" alt=""></a></h2>
             <h4>Don Bosco Cairo</h4>
             <nav>
                 <ul>
                     <li><a class="l1" href="#top">Home</a></li>
                     <li><div class='dropdown'>
-                            <a class="l2" href="#argomenti">Our services</a>
-                            <div class="dropdown-content">
+                            <a class="l2" href="#argomenti">Our services&emsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content" id='drop1'>
                                 <a href="#deploma-page">ITI (deploma 5 years )</a>
                                 <a href="#ipi-pagr">IPI(3 years)</a>
                                 <a class='last' href="#course-page">Courses</a>
@@ -32,8 +32,8 @@
                     </li>
                     <li>
                         <div class='dropdown'>
-                            <a class="l3" href="esercizi.html">Blog</a>
-                            <div class="dropdown-content">
+                            <a class="l3" href="esercizi.html">Blog&emsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content" id='drop2'>
                                 <a href="#primo_argomento">Upcoming courses</a>
                                 <a href="#secondo_argomento">Up coming events</a>
                                 <a class='last' href="#terzo_argomento">News</a>
@@ -46,6 +46,7 @@
 
                 </ul>
             </nav>
+            <a id='arrowDown'><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         </header>
         <div id='div1'>
             <h1>Don Bosco Cairo</h1>
@@ -54,7 +55,7 @@
         <div id='div2'></div>
         <div id='recent-news'>
            <h1>Recent News</h1>
-            <a class="botton1"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+            <a class="botton1"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
             <div id='news'>
                 <article>
                     <img class="img" alt='photo' src='image/martin-sanchez-LNYdatC3znA-unsplash.svg'>
@@ -66,10 +67,25 @@
                     <a>See all the info on the dedicated page.</a>
                 </article>
             </div>
-            <a class="botton2" href="#top"><i id="b2" class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="botton2" href="#top"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
         </div>
 
     </body>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("arrowDown").style.display = "none";
+
+            } else {
+                document.getElementById("navbar").style.top = "-80px";
+                document.getElementById("arrowDown").style.display = "block";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
 
 </html>
