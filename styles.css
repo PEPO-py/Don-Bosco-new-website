@@ -70,6 +70,7 @@ header{
     justify-content: space-around;
     align-items: center;
     transition: all 0.5s ease-in-out;
+    padding: 7px 0px;
 }
 
 #arrowDown{
@@ -78,11 +79,20 @@ header{
     left: 50%;
     right: 50%;
     top: 10px;
+    background-color: transparent;
+    color: #FF5B72;
     animation: down 1s ease;
     animation-fill-mode: forwards;
     transition: all 1s ease;
+    display: none;
+    border: 0px solid;
 
 }
+
+#arrowDown{
+    border: 0px solid;
+}
+
 
 header a{
     padding: 0 20px;
@@ -451,10 +461,10 @@ RECENT NEWS
 
 .botton1 {
     float: left;
-    margin-top: 10%;
     text-align: center;
     color: #FF5B72;
     font-size: 50px;
+    margin-top: 10%;
     
 }
 .botton1:hover{
@@ -471,10 +481,10 @@ RECENT NEWS
 
 .botton2 {
     float: right;
-    margin-top: -11%;
     text-align: center;
     color: #FF5B72;
     font-size: 50px;
+    margin-top: 10%;
 }
 
 .botton2:hover{
@@ -482,9 +492,10 @@ RECENT NEWS
     background-color: #FF5B72;
     color: #fff;
     border-radius: 20px;
-     width: 50px;
+    width: 50px;
     height: 50px;
 }
 
 .botton2:active{margin-right:-20px;}
+
 
