@@ -498,4 +498,71 @@ RECENT NEWS
 
 .botton2:active{margin-right:-20px;}
 
+<<<<<<< HEAD
+=======
+/*svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF5B72;
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }*/
+
+
+
+
+
+
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  font-family: Lato, sans-serif;
+  --col-deepblue: #FF5B72;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+}
+footer {
+  width:100vw;
+  bottom:0px
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #FF5B72;
+}
+
+
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
+>>>>>>> origin/master
 
