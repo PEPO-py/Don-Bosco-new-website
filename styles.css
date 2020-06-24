@@ -560,16 +560,35 @@ RECENT NEWS
 }
 
 .service-item {
-    width: calc((100% - 90px * 2) / 3);
-    height: 400px;
+    font-size: 20px;
+    width: 300px;
+    height: 408px;
     display: flex;
+    background-color: #FFF6F8;
     flex-direction: column;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 40px 20px;
+    padding: 40px 40px;
     border-radius: 30px;justify-content: space-between;
     align-items: center;
     text-align: center;
+    transition: all 0.5s ease-in;
 }
+.service-item__icon{
+    font-size: 70px;
+    fill: #fff;
+}
+
+.service-item:hover{
+    width: 350px;
+    height: 470px;
+    background-color: #828282;
+    color:white;
+    margin-right: -50px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
 
 /*svg {
     display: inline-block;
