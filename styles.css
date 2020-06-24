@@ -456,7 +456,7 @@ RECENT NEWS
     float: left;
     text-align: center;
     color: #FF5B72;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 10%;
     
 }
@@ -465,8 +465,10 @@ RECENT NEWS
     background-color: #FF5B72;
     color: #fff;
     border-radius: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 
 .botton1:active{margin-left:-20px;}
@@ -476,7 +478,7 @@ RECENT NEWS
     float: right;
     text-align: center;
     color: #FF5B72;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 10%;
 }
 
@@ -485,8 +487,10 @@ RECENT NEWS
     background-color: #FF5B72;
     color: #fff;
     border-radius: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .botton2:active{margin-right:-20px;}
@@ -578,13 +582,36 @@ RECENT NEWS
     fill: #fff;
 }
 
+.service-item__header{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.service-item__paragraph{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .service-item:hover{
     width: 350px;
     height: 470px;
     background-color: #828282;
     color:white;
-    margin-right: -50px;
+    margin: 0px -25px;
     transition: all 0.5s ease-in-out;
+}
+
+.service-item:hover .service-item__header{
+    font-size: 25px;
+    margin: 0px 0px;
+}
+
+.service-item:hover .service-item__paragraph{
+    font-size: 18px;
+    margin-bottom: 80px;
 }
 
 
@@ -615,7 +642,7 @@ a {
   text-decoration:none;
 }
 footer {
-  width:100vw;
+  width:100%;
   bottom:0px
 }
 footer div {
