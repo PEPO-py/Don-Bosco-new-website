@@ -577,18 +577,17 @@ RECENT NEWS
     margin-bottom: 30px;
 }
 
-.service-item {
+.service-item{
+    width: 302px;
+    height: 450px;
     display: flex;
-<<<<<<< HEAD
     background-color: #FFF6F8;
-=======
-    background-color: #fff6f8;
->>>>>>> 6ad0e97bc34da4458b793c20b40170e6629dc51f
     flex-direction: column;
     box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 35px;
+    padding: 35px 40px;
     padding-top: 20px;
     border-radius: 30px;
+    margin: 0px -15px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -598,7 +597,7 @@ RECENT NEWS
 .service-item__icon {
     font-size: 70px;
     color: #777;
-    transition: color .4s;
+    transition: color .9s;
 }
 
 .service-item__header {
@@ -606,67 +605,26 @@ RECENT NEWS
     font-weight: bold;
 }
 
-.service-item__paragraph {
+.service-item__paragraph{
     font-size: 14px;
+    text-align: match-parent;
+    margin-bottom: 100px;
 }
 
-<<<<<<< HEAD
-.after-hover:hover .service-item__header{
-    font-size: 23px;
-}
-.after-hover:hover .service-item__paragraph{
-    font-size: 18px;
+.after-hover:hover .service-item__icon{
+    color: #FFF;
+    transition: color .9s;
 }
 
-.service-item1:hover{
-=======
 .service-item:hover {
-    transform: scale(1.1);
-    color: #fff;
-    background-color: var(--col-deepblue);
-}
-
-.service-item:hover > .service-item__icon {
-    color: #fff;
-}
-
-/* 
-.service-item1:hover {
->>>>>>> 6ad0e97bc34da4458b793c20b40170e6629dc51f
-    width: 320px;
-    height: 450px;
-    background-color: orange;
+    background-color: #FF5B72;
     color:white;
     margin: -0px -10px;
     margin-top: -25px;
     transition: all 0.5s ease-in-out;
-    transform: translate(-30px,30px);
+    transform: translate(-5px,-1px);
     position: relative;
 }
-
-.service-item2:hover {
-    width: 320px;
-    height: 450px;
-    background-color: #31d131;
-    color:white;
-    margin: -0px -50px;
-    margin-top: -25px;
-    transition: all 0.5s ease-in-out;
-    transform: translate(0px,-30px);
-    position: relative;
-}
-
-.service-item3:hover {
-    width: 320px;
-    height: 450px;
-    background-color: #bd2fa5;
-    color:white;
-    margin: -0px -10px;
-    margin-top: -25px;
-    transition: all 0.5s ease-in-out;
-    transform: translate(30px,30px);
-    position: relative;
-} */
 
 /*svg {
     display: inline-block;
