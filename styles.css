@@ -584,6 +584,7 @@ RECENT NEWS
 .service-item {
     display: flex;
     background-color: #fff6f8;
+    color: #707070;
     flex-direction: column;
     box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 35px;
@@ -597,7 +598,7 @@ RECENT NEWS
 
 .service-item__icon {
     font-size: 70px;
-    color: #777;
+    color: #707070;
     transition: color .4s;
 }
 
