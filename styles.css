@@ -566,51 +566,62 @@ RECENT NEWS
     max-width: 75%;
     margin: 0 auto;
     margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
 }
 
 .services__header {
     color: var(--col-deepblue);
     font-size: 30px;
     text-align: center;
-    /* margin-bottom: 50px; */
 }
 
-.service-item1, .service-item2, .service-item3{
-    font-size: 20px;
-    width: 300px;
-    height: 408px;
+.service-item > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.service-item {
     display: flex;
-    background-color: #ecdde1;
+    background-color: #fff6f8;
     flex-direction: column;
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 40px 40px;
+    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 35px;
+    padding-top: 20px;
     border-radius: 30px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    transition: all 0.5s ease-in;
-}
-.service-item__icon{
-    font-size: 70px;
-    fill: #fff;
+    transition: all .4s;
 }
 
-.service-item__header{
+.service-item__icon {
+    font-size: 70px;
+    color: #777;
+    transition: color .4s;
+}
+
+.service-item__header {
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
 }
 
-
-.service-item__paragraph{
+.service-item__paragraph {
     font-size: 14px;
-    text-align: center;
-    margin-bottom: 60px;
 }
 
-.service-item1:hover{
+.service-item:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: var(--col-deepblue);
+}
+
+.service-item:hover > .service-item__icon {
+    color: #fff;
+}
+
+/* 
+.service-item1:hover {
     width: 320px;
     height: 450px;
     background-color: orange;
@@ -621,7 +632,7 @@ RECENT NEWS
     position: relative;
 }
 
-.service-item2:hover{
+.service-item2:hover {
     width: 320px;
     height: 450px;
     background-color: #31d131;
@@ -632,7 +643,7 @@ RECENT NEWS
     position: relative;
 }
 
-.service-item3:hover{
+.service-item3:hover {
     width: 320px;
     height: 450px;
     background-color: #bd2fa5;
@@ -641,7 +652,7 @@ RECENT NEWS
     margin-top: -25px;
     transition: all 0.5s ease-in-out;
     position: relative;
-}
+} */
 
 /*svg {
     display: inline-block;
@@ -699,5 +710,3 @@ footer div {
 @keyframes wave {
   to {transform: translateX(-100%);}
 }
-
-
