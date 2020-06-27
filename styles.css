@@ -625,7 +625,7 @@ SEVICES SECTOIN
     margin: -0px -10px;
     margin-top: -25px;
     transition: all 0.5s ease-in-out;
-    transform: translate(-5px,-1px);
+    transform: translate(-5px,35px);
     position: relative;
 }
 /*-------------------------------------------------------------------------------------------*/
@@ -827,6 +827,7 @@ footer{
 }
 
 .sec4 .button{
+    color: #FF5B72;
     outline: none !important;
     cursor: pointer;
     width:50px;
