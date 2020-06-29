@@ -856,3 +856,82 @@ footer{
     border-radius: 5px;
     box-shadow: 1px 0px 3px 0px rgb(7,7,7,0.6);
 }
+
+
+/* ---------------------------------------------------- */
+
+.contacts {
+    margin: 50px auto;
+    padding: 50px 80px;
+    max-width: 1140px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacts__wrapper {
+    display: flex;
+}
+
+.contacts__wrapper > * {
+    flex: 0 0 50%;
+}
+
+.contacts__info {
+    margin-right: 30px;
+    border-right: 1px solid #FF5B72;
+    padding-right: 40px;
+}
+
+.contacts__header {
+    color: #FF5B72;
+    margin-left: -10px;
+    margin: 0 0 25px -20px;
+}
+
+.contacts__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contacts__email {
+    color: #FF5B72;
+}
+
+.contacts__phone {
+    margin-top: 30px;
+}
+
+.contacts__nums {
+    display: flex;
+    justify-content: space-between;
+    color: #FF5B72;
+    margin-bottom: 20px;
+}
+
+.contacts__map:link,
+.contacts__map:visited {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    color: inherit;
+}
+
+.contacts__address {
+    color: #FF5B72;
+}
+
+.inputs input {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid #FF5B72;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.inputs input::placeholder {
+    color: #FF5B72;
+}
+
