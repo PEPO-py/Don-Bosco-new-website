@@ -742,7 +742,7 @@ footer{
 }
 
 .sec1 p{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 3;
 }
 /*--------------*/
@@ -772,7 +772,7 @@ footer{
     color:#FF5B72;
     top: -5px;
     bottom: 50%;
-    left: -38px;
+    left: -35px;
     font-size: 35px;
     z-index: 2;
     text-shadow: 9px 7px 10px rgb(7,7,7,0.2);
@@ -826,7 +826,9 @@ footer{
     color:black;
     z-index: 1;
 }
-
+::placeholder {
+    color: white;
+}
 .sec4 .button{
     color: #FF5B72;
     outline: none !important;
