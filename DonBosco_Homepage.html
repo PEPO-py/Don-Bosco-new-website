@@ -10,68 +10,82 @@
         <link rel="stylesheet" href="styles.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <style>
-            .mySlides {
-                display: none;
-            }
-            img {vertical-align: middle;}
-            
-            /* Slideshow container */
-            .slideshow-container {
-                max-width: 1000px;
+            .photo-slider{
+                justify-self: center;
                 position: relative;
-                margin: auto;
+                align-self: center;
+                width: 900px;;
+                height: 78vh;
+                bottom: 0;
+                top:0;
+                left: 60px;
+                right: 0;
+                margin-top: 0px;
+                margin-bottom: 20rem;
+                background-color: transparent;
+                border-radius: 5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                z-index: -2;
             }
-            
-            /* Caption text */
-            .text {
-                color: #f2f2f2;
-                font-size: 15px;
-                padding: 8px 12px;
-                position: absolute;
-                bottom: 8px;
-                width: 100%;
-                text-align: center;
-            }
-            
-            /* Number text (1/3 etc) */
-            .numbertext {
-                color: #f2f2f2;
-                font-size: 12px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
-            }
-            
-            /* Fading animation */
 
             
-            @keyframes trans{
-                0%{
-                    opacity: 0;
-                    transform: translateX(-50%);
-                }
-                100%{
-                    opacity: 1;
-                    transform: translateX(0%);
-                }
+            .back{
+                position: absolute;
+                left:-25%;
+                top:25%;
+                z-index: -2;
+                opacity: 0.5;
+
+
             }
             
-            @keyframes trans-re{
-                0%{
-                    opacity: 0;
-                    transform: translateX(50%);
-                }
-                100%{
-                    opacity: 1;
-                    transform: translateX(0%);
-                }
+            .back2{
+                position: absolute;
+                right:-25%;
+                top:25%;
+                z-index: -2;
+                opacity: 0.5;
+
+
+            }
+            .front{
+                position: relative;
+                justify-self: center;
+                left: 0;
+                right: 0;
+                bottom:0;
+                height: 78vh;
+                top:151px;
+                z-index: 1;
             }
             
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {
-                .prev, .next,.text {font-size: 11px}
+            .but1{
+                position: relative;
+                text-align: center;
+                color: #FF5B72;
+                font-size: 40px;
+                top: 75%;
+                left:-30%;
+                z-index: 3;
+
             }
-    </style>
+            .photo-slider a:active{
+                background-color: aqua;
+            }
+            
+            .but2{
+                position: relative;
+                text-align: center;
+                color: #FF5B72;
+                font-size: 40px;
+                top: 75%;
+                left: 1000px;
+            }
+
+
+        </style>
     </head>
 
 
@@ -171,7 +185,14 @@
                     <img src="image//gal-14.jpeg" alt="Don_Bosco_logo_icon">
                 </div>
             </div>
-            <a href="#" class="about__link">See More Information &rightarrow;</a>
+            <a href="#" class="about__link" style="color: #FF5B72">See More Information &rightarrow;</a>
+            <div class="photo-slider">
+                <a class="but2" onclick="plusSlides2(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <a class="but1" onclick="plusSlides2(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                <img class="photo back" alt="photo" src="image/photo-to-silde1.png">
+                <img  class="photo front" alt="phtot" src="image/photo-to-silde3.png">
+                <img class="photo back2" alt="photo" src="image/photo-to-silde2.png">
+            </div>
         </div>
         <!*******************************************************************************************************************>
 
@@ -273,6 +294,7 @@
             document.getElementById("navbar").style.top = "0";
             document.getElementById("arrowDown").style.display = "none";
         }
+        //------------------------------------------------------------------
         
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -317,6 +339,52 @@
             
                 slides[slideIndex-1].style.display = "block";
                 slides[slideIndex-1].style.animation = "trans 1.5s";
+            }
+        }
+        //--------------------------------------
+        var slideIndex2 = 1;
+        showSlides2(slideIndex2);
+
+        function plusSlides2(n2) {
+            if (n2 < 0){
+                showSlides2(slideIndex2 += n2,true);
+            }
+            else {
+                showSlides2(slideIndex2 += n2,false);
+            }
+        }
+
+        function currentSlide2(n2) {
+            showSlides2(slideIndex2 = n2);
+        }
+
+        function showSlides2(n2,veri2) {
+            if (veri2 == true){
+                var i2;
+                var slides2 = document.getElementsByClassName("photo");
+                if (n2 > slides2.length) {slideIndex2 = 1}
+                if (n2 < 1) {slideIndex2 = slides2.length}
+                for (i2 = 0; i2 < slides2.length; i2++) {
+                    slides2[i].style.display = "none";
+                }
+
+                slides2[slideIndex-1].style.opacity = "1";
+                slides2[slideIndex-1].style.animation = "trans-re 1.5s";
+
+
+            }
+
+            else{
+                var i2;
+                var slides2 = document.getElementsByClassName("photo");
+                if (n2 > slides2.length) {slideIndex2 = 1}
+                if (n2 < 1) {slideIndex2 = slides2.length}
+                for (i2 = 0; i2 < slides2.length; i2++) {
+                    slides2[i].style.display = "none";
+                }
+
+                slides2[slideIndex-1].style.opacity = "1";
+                slides2[slideIndex-1].style.animation = "trans 1.5s";
             }
         }
         
