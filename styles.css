@@ -62,7 +62,7 @@ header h4 {
 header {
     background-color: #fff;
     position:sticky;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     height: auto;
@@ -90,6 +90,7 @@ header {
     transition: all 1s ease;
     display: none;
     border: 0px solid;
+    z-index: 100;
 
 }
 
@@ -603,6 +604,88 @@ ABOUT SECTION
     padding: 3px 0;
 }
 
+/*ABOUT SILDER*/
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 400px;
+    margin: 115px auto 0;
+}
+
+
+.hi-slide .hi-prev,
+.hi-slide .hi-next{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 180px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #FF5B72;
+    transition: all 0.7s;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.hi-slide .hi-prev:hover,
+.hi-slide .hi-next:hover{
+    color: white;
+    background-color: #FF5B72;
+    opacity: 1;
+}
+
+.hi-slide .hi-prev{
+    left: -70px;
+}
+
+.hi-slide .hi-prev:active{
+    left: -85px;
+}
+
+.hi-slide .hi-next{
+    right: -70px;
+}
+
+.hi-slide .hi-next:active{
+    right: -85px;
+}
+
+.hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+
+}
+
+.hi-slide > ul > li > img{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    border-radius: 60px;
+}
+
 
 
 /*------------------------
@@ -679,6 +762,9 @@ SEVICES SECTOIN
     transform: translate(-5px,35px);
     position: relative;
 }
+
+
+
 /*-------------------------------------------------------------------------------------------*/
 
 

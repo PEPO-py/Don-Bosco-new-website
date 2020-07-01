@@ -11,113 +11,86 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <style>
 
-            .directors{
-                width: 800px;
-                height: 389px;
+            .hi-slide{
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin: 5% 20%;
-                background-color: transparent;
+                width: 754px;
+                height: 292px;
+                margin: 115px auto 0;
             }
 
             
-            .directors > .header-text{
+            .hi-slide .hi-prev,
+            .hi-slide .hi-next{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                margin-top: 100px;
+                border-radius: 50px;
+                line-height: 40px;
+                text-align: center;
+                cursor: pointer;
+                background-color: #FF5B72;
+                color:white;
+                transition: all 0.7s;
+                font-size: 25px;
+                font-weight: bold;
+
+            }
+            
+            .hi-slide .hi-prev:hover,
+            .hi-slide .hi-next:hover{
                 color: #FF5B72;
-                margin-bottom: 100px;
-                text-align: center;
+                background-color: white;
+                opacity: 1;
+            }
+
+            .hi-slide .hi-prev{
+                left: -70px;
             }
             
-            .directors > .container-divs{
+            .hi-slide .hi-next{
+                right: -70px;
+            }
+
+            .hi-slide > ul{
+                list-style: none;
                 position: relative;
+                width: 754px;
+                height: 292px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .hi-slide > ul > li{
+                overflow: hidden;
+                position: absolute;
+                z-index: 0;
+                left: 377px;
+                top: 147px;
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+                cursor: pointer;
+
+            }
+            
+            .hi-slide > ul > li > img{
                 width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-            }
-
-            .directors > .container-divs > .direct{
-                position: relative;
-                display: flex;
-                width: 260px;
                 height: auto;
-                flex-direction: column;
-                justify-content: space-between;
-                background-color: #F8D0D9;
-                padding: 60px 0px;
-                padding-top: 30px;
-                margin: 0px 5px;
-                box-shadow: 3px 6px 8px 6px rgba( 7, 7, 7, 0.2);
+                background-position: center;
             }
-            
-            .directors > .container-divs > .direct > img{
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                box-shadow: 6px -1px 8px 2px rgba( 7, 7, 7, 0.2);
-                align-self: center;
-
-            }
-
-            .directors > .container-divs > .direct > .description{
-                position: relative;
-                justify-self: self-end;
-                top: 65%;
-                display: block;
-                padding: 20px 40px;
-                box-shadow: 3px 6px 8px 6px rgba( 7, 7, 7, 0.2);
-                text-align: center;
-                color: white;
-                border-radius: 80px;
-            }
-
-            .directors > .container-divs > .first,.third{
-                background-color: #F8D0D9;
-            }
-            
-
-            .directors > .container-divs > .secound{
-                top: -20px;
-                width: 270px;
-                background-color: #FF5B72;
-            }
-
-            .directors > .container-divs > .secound > .description{
-                background-color: #FF5B72;
-            }
-
-            .directors > .container-divs > .first > .description,.third > .description{
-                background-color: #FF728A;
-            }
-
-            .description > dt{
-                font-size: 18px;
-            }
-
-            .description > dd{
-                font-size: 10px;
-            }
-
-            .first:hover{
-                background-color: darkgoldenrod;
-                transform: translateY(-20px);
-                width: 270px;
-            }
-            .third:hover{
-                background-color: darkgoldenrod;
-                transform: translateY(-20px);
-                width: 270px;
-            }
-
-            .secound:hover{
-                transform: translateY(20px);
-            }
-
 
         </style>
-    </head>
+    
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	</script-->
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<!--script type="text/javascript" src="engine1/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
 
 
     <body>
@@ -222,36 +195,16 @@
                 <div class="hi-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                 <ul>
                     <li>
-                        <img src="image/280_0_5451368_730264.jpg" alt="photo-slide1">
+                        <img src="image/photo-to-silde1.jpg" alt="photo-slide1">
                     </li>
 
                     <li>
-                        <img src="image/678_0_5467128_730264.jpg" alt="photo-slide3">
+                        <img src="image/photo-to-silde3.jpg" alt="photo-slide3">
                     </li>
 
                     <li>
-                        <img src="image/678_0_5467143_730264.jpg" alt="photo-slide2">
+                        <img src="image/photo-to-silde2.jpg" alt="photo-slide2">
                     </li>
-
-                    <li>
-                        <img src="image/678_0_5467143_730264.jpg" alt="photo-slide2">
-                    </li>
-
-                    <li>
-                        <img src="image/280_0_5451368_730264.jpg" alt="photo-slide1">
-                    </li>
-
-                    <li>
-                        <img src="image/678_0_5467128_730264.jpg" alt="photo-slide3">
-                    </li>
-
-                    <li>
-                        <img src="image/678_0_5467143_730264.jpg" alt="photo-slide2">
-                    </li>
-
-                    <li>
-                        <img src="image/678_0_5467143_730264.jpg" alt="photo-slide2">
-                        </li>
                 </ul>
 
             </div>
@@ -287,38 +240,6 @@
         </div>
         <br><br><br>
         <div class="school-directors"></div>
-        <!*******************************************************************************************************************>
-
-        <div class="directors direct">
-            <h2 class="header-text">Our Dirctors</h2>
-            <div class="container-divs">
-
-                <div class="direct first">
-                    <img src="image/avatar.svg" alt="photo">
-                    <dl class="description">
-                        <dt>Name Surname</dt>
-                        <dd>Co-Founder and CTO</dd>
-                    </dl>
-                </div>
-
-                <div class="direct secound">
-                    <img src="image/avatar.svg" alt="photo">
-                    <dl class="description">
-                        <dt>Ramy Halim</dt>
-                        <dd>The Egyptian director</dd>
-                    </dl>
-                </div>
-
-                <div class="direct third">
-                    <img src="image/avatar.svg" alt="photo">
-                    <dl class="description">
-                        <dt>Name Surname</dt>
-                        <dd>Co-Founder and CTO</dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-
         <!*******************************************************************************************************************>
 
 
