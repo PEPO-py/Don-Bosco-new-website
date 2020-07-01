@@ -689,7 +689,7 @@ ABOUT SECTION
 
 
 /*------------------------
-SEVICES SECTOIN
+SERVICES SECTION
 -----------------------*/
 .services {
     margin-top: 60px;
@@ -712,6 +712,10 @@ SEVICES SECTOIN
 
 .service-item > *:not(:last-child) {
     margin-bottom: 30px;
+}
+
+.youtube{
+    margin-top: -10px;
 }
 
 .service-item{
@@ -1070,4 +1074,9 @@ footer{
 .inputs input::placeholder {
     color: #FF5B72;
 }
+
+
+
+
+
 
