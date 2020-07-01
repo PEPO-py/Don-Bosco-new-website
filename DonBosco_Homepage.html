@@ -73,23 +73,29 @@
                 border-radius: 80px;
             }
 
-            .directors > .container-divs > .first,.third{
+            .directors > .container-divs > .first,
+            .directors > .container-divs > .third{
                 background-color: #F8D0D9;
+                transition: all 0.4s ease-in-out;
             }
             
 
             .directors > .container-divs > .secound{
                 top: -20px;
-                width: 270px;
+                width: 280px;
                 background-color: #FF5B72;
+                transition: all 0.5s ease-in-out;
             }
 
             .directors > .container-divs > .secound > .description{
                 background-color: #FF5B72;
+                transition: all 0.5s ease-in-out;
             }
 
-            .directors > .container-divs > .first > .description,.third > .description{
+            .directors > .container-divs > .first > .description,
+            .directors > .container-divs > .third > .description{
                 background-color: #FF728A;
+                transition: all 0.4s ease-in-out;
             }
 
             .description > dt{
@@ -100,19 +106,17 @@
                 font-size: 10px;
             }
 
-            .first:hover{
-                background-color: darkgoldenrod;
+            .directors > .container-divs > .first:hover,
+            .directors > .container-divs > .third:hover{
+                background-color: #FF5B72;
                 transform: translateY(-20px);
-                width: 270px;
-            }
-            .third:hover{
-                background-color: darkgoldenrod;
-                transform: translateY(-20px);
-                width: 270px;
+                width: 280px;
+                transition: all 0.4s ease-in-out;
             }
 
-            .secound:hover{
-                transform: translateY(20px);
+            .directors > .container-divs > .secound:hover{
+                transform: translateY(30px);
+                transition: all 0.5s ease-in-out;
             }
 
 
